@@ -2,6 +2,10 @@ console.log("it works")
 const toggle = document.querySelector(".toggleBtn");
 const closeBtn = document.querySelector(".close-btn");
 const sideBar = document.querySelector(".side");
+const welcome= document.getElementById("welcome")
+
+
+
 
 //Toggle show class on side nav
 toggle.addEventListener("click", function() {

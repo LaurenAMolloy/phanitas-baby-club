@@ -91,6 +91,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #3D1C55;
+    background-color: var(--palegrey);
 }
 
 header {
@@ -254,7 +255,7 @@ h3 {
 
 .about-us {
     background-color: var(--phanitasGreen);
-    padding: .5rem 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
 }
@@ -267,7 +268,7 @@ h3 {
     font-size: 40px;
 }
 
-.about-us-text>p {
+.about-us-card>p {
     padding-bottom: 1.5rem;
 }
 
@@ -281,23 +282,24 @@ h3 {
     background: white;
 }
 
-/* Why */
+/* Why Us */
 
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
     /* One column layout */
     gap: 5rem;
+    padding: 2rem 0 2rem 0;
+    justify-items: center;
 }
 
 .card-container>h2 {
-    padding-bottom: 6rem;
     text-align: center;
     font-size: 40px;
+    padding: 0;
 }
 
 .our-goals {
-    padding: 1rem 0;
     display: flex;
     justify-content: center;
 }
@@ -311,7 +313,7 @@ h3 {
     color: var(--deepPurple);
     border-radius: 2rem;
     padding: 2rem;
-    max-width: 350px;
+    width: 70%;
 }
 
 
@@ -344,28 +346,157 @@ h3 {
 }
 
 /* Our Classes/Departments */
+.class-card-container {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column layout */
+    gap: 2rem;
+}
 
 .departments {
-    padding: 1rem 0;
     display: flex;
     justify-content: center;
     background-color: var(--lightGreen);
-    padding: 1.5rem 0rem;
 }
 
 .class-title {
     text-align: center;
 }
 
+.class-card {
+    border-radius: 2rem;
+    border: 2px solid var(--phanitasPurple);
+    overflow: hidden;
+    background-color: var(--palegrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-card>h3 {
+    text-align: center;
+    padding: .8rem 0;
+}
+
+.classBtn {
+    padding: 0.8rem 1rem;
+    background-color: var(--brightPink);
+    /* Use a standout color */
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: none;
+    width: 50%;
+    margin: 1rem 0;
+}
+
+.classBtn:hover {
+    background-color: var(--phanitasPurple);
+    /* Slight hover effect */
+}
+
+
 
 /* Footer */
 
 .footer {
-    background-color: #f4229d;
+    background-color: var(--brightPink);
+    color: var(--palegrey);
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.contact {
+    padding-top: 1rem;
+    width: 80%;
+}
 
+.contact>h5 {
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.contact ul {
+    list-style-type: none;
+}
+
+.contact ul li {
+    padding: .2rem 0;
+    margin: 0;
+    font-size: .8rem;
+}
+
+.contact a {
+    color: var(--palegrey);
+    text-decoration: none;
+}
+
+.icon {
+    padding-right: .8rem;
+    color: var(--deepPurple)
+}
+
+.social {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-logo {
+    border-radius: .8rem;
+    width: 100px;
+    height: 100px;
+}
+
+.quick-links {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    list-style-type: none;
+    margin: 0;
+    padding: .5rem 0 0 0;
+    font-size: .8rem;
+
+}
+
+.footer-quick-links a {
+    color: white;
+    /* add a contrasting color to make the links visible */
+    text-decoration: none;
+    /* remove underlines */
+    padding: 0.5em;
+    /* add padding to create space around the links */
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.footer-quick-links a::before {
+    content: "→";
+    /* Unicode arrow */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Center the arrow vertically */
+    font-size: 18px;
+    /* Size of the arrow */
+    color: var(--deepPurple);
+    /* Lighter color for the arrow */
+}
 
 /* Media Queries */
 /* Tablet Styles */
