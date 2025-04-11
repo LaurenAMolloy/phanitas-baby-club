@@ -284,6 +284,18 @@ h3 {
 
 /* Why Us */
 
+.our-goals {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.why-us-title {
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+}
+
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -313,7 +325,7 @@ h3 {
     color: var(--deepPurple);
     border-radius: 2rem;
     padding: 2rem;
-    width: 70%;
+    width: 80%;
 }
 
 
@@ -397,8 +409,6 @@ h3 {
     /* Slight hover effect */
 }
 
-
-
 /* Footer */
 
 .footer {
@@ -417,7 +427,7 @@ h3 {
 }
 
 .contact>h5 {
-    text-align: center;
+
     padding-bottom: .5rem;
 }
 
@@ -558,5 +568,57 @@ h3 {
     li {
         padding: 0;
     }
+
+    /* Hero Styles */
+    .hero-area>.content-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-text {
+        flex: 0 0 45%;
+    }
+
+    .hero-ing-container {
+        flex-basis: 0 0 45%;
+    }
+
+    /* Why Us */
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem
+    }
+
+    .card {
+        width: 100%
+    }
+
+    /* Our Classes */
+    .class-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem
+    }
+
+    /* Footer */
+    .footer-text {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .quick-links,
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 
 }
