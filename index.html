@@ -26,7 +26,7 @@
         <nav>
             <!--nav header-->
             <div class="nav-header">
-                <img class="logo" src="./img/logo.jpg">
+                <img class="logo" src="./img/logo.jpg" alt="logo">
                 <button type="button" class="toggleBtn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -38,22 +38,24 @@
                     </button>
                     <ul class="links">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" data-i18n="home">Home</a>
                         </li>
                         <li>
-                            <a href="#">Our School</a>
+                            <a href="#" data-i18n="school">Our School</a>
                         </li>
                         <li>
-                            <a href="#">Gallery</a>
+                            <a href="#" data-i18n="gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="#">Teachers & Classes</a>
+                            <a href="#" data-i18n="teachers-classes">Teachers & Classes</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="#" data-i18n="contact_us">Contact Us</a>
                         </li>
+                        <li><a href="index.html" onclick="changeLanguage('en')" data-i18n="english">English</a></li>
+                        <li><a href="index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a></li>
                         <li class="phone">
-                            <a href="tel:+35799578375">CALL US</a>
+                            <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
                         </li>
                     </ul>
                 </aside>
@@ -67,17 +69,19 @@
     <section class="hero-area">
         <div class="content-wrapper">
             <div class="hero-text">
-                <h1 id="welcome">Welcome to Phanita's Baby Club</h1>
-                <h2>Looking for a second place so your child feels like at home?</h2>
-                <h3>Our Baby club offers all the safety and tenderness your child can find at home</h3>
-                <p>OPEN MONDAY-FRIDAY</p>
-                <P>6.45AM - 17.00PM</P>
+                <h1 id="welcome" data-i18n="welcome_message">Welcome to Phanitas Baby Club</h1>
+                <h2 data-i18n="hero_txt1">Looking for a second place so your child feels like at home?</h2>
+                <h3 data-i18n="hero_txt2">Our Baby club offers all the safety and tenderness your child can find at home
+                </h3>
+                <p data-i18n="hero_p1">OPEN MONDAY-FRIDAY</p>
+                <P data-i18n="hero_p2">6.45AM - 17.00PM</P>
                 <a class="phone" href="tel:+35799578375">
-                    <button class="hero-cta">Talk to Us Today</button>
+                    <button class="hero-cta" data-i18n="hero_cta_text">Talk to Us Today</button>
                 </a>
             </div>
             <div class="hero-img-container">
-                <img class="hero-img" src="./img/freetime-jam-Js_SgE4ekqc-unsplash.jpg">
+                <img class="hero-img" src="./img/freetime-jam-Js_SgE4ekqc-unsplash.jpg"
+                    alt="little girl playing with building blocks">
             </div>
         </div>
     </section>
@@ -87,17 +91,19 @@
     <!--Who We Are-->
     <section class="about-us">
         <div class="content-wrapper">
-            <img class="long-logo" src="./img/long-log.jpg">
+            <img class="long-logo" src="./img/long-log.jpg" alt="logo">
             <div class="about-us-card">
-                <h2>About Us</h2>
-                <h3>“Aiming to create complete people with strong personalities.
+                <h2 data-i18n="aboutus_title">About Us</h2>
+                <h3 data-i18n="aboutus_aim">“Aiming to create complete people with strong personalities.
                     And above all <span>LOVE, RESPECT, DEDICATION</span> to each child.”</h3>
-                <p>Welcome to the nursery - childcare center for all-day care, employment and study "Phanita's Baby
+                <p data-i18n="aboutus_blurb1">Welcome to the nursery - childcare center for all-day care, employment and
+                    study "Phanita's Baby
                     Club". This is a model preschool and education center, where your child will be properly educated,
                     socialized and will be able to gradually integrate into society as a whole more easily.
                     Phanita's Baby Club daycare center was founded in 2007 with all the specifications required by
                     today's standards.</p>
-                <p>We are located in the area of ​​Agios Sylas, Ypsonas and in between in the area of ​​the new
+                <p data-i18n="aboutus_blurb2">We are located in the area of ​​Agios Sylas, Ypsonas and in between in the
+                    area of ​​the new
                     Limassol Hospital and Kolossi.
                     The station's main characteristic is a place of life and education.
                     A space that is not a station for "parking" the child but on the contrary is a space for creation
@@ -105,25 +111,26 @@
                     space of coexistence, collaboration, creation, sharing, love, offering...</p>
             </div>
             <div>
-                <img class="about-us-img" src="img/children-scribble.jpg">
+                <img class="about-us-img" src="img/children-scribble.jpg" alt="children scribbling">
             </div>
         </div>
     </section>
 
     <!--Goals-->
     <section class="our-goals">
-        <h2 class="why-us-title">Why Us</h2>
+        <h2 class="why-us-title" data-i18n="why_us">Why Us</h2>
         <div class="card-container">
             <div class="card">
                 <div class="card-img">
-                    <img src="./img/play-dough.jpg">
+                    <img src="./img/play-dough.jpg" alt="playdough">
                 </div>
                 <div class="card-text">
-                    <h3>Our Basic Principles</h3>
+                    <h3 data-i18n="principles">Our Basic Principles</h3>
                     <ul>
-                        <li>I work in a team</li>
-                        <li>Each child has their own uniqueness and individuality.</li>
-                        <li>The educational program is based on all the interdisciplinary modules of early childhood
+                        <li data-i18n="principles_li1">I work in a team</li>
+                        <li data-i18n="principles_li2">Each child has their own uniqueness and individuality.</li>
+                        <li data-i18n="principles_li3">The educational program is based on all the interdisciplinary
+                            modules of early childhood
                             education and care, in accordance with education in Cyprus.</li>
                     </ul>
                 </div>
@@ -131,17 +138,17 @@
 
             <div class="card">
                 <div class="card-img">
-                    <img src="./img/boy-building-blocks.jpg">
+                    <img src="./img/boy-building-blocks.jpg" alt="boy playing with building blocks">
                 </div>
                 <div class="card-text">
-                    <h3>Our Goals</h3>
+                    <h3 data-i18n="our_goals">Our Goals</h3>
                     <ul>
-                        <li>Socialization</li>
-                        <li>Mutual respect</li>
-                        <li>Cooperation</li>
-                        <li>Self-esteem</li>
-                        <li>Love for learning and creation</li>
-                        <li>HAPPY FACES…</li>
+                        <li data-i18n="goals_li1">Socialization</li>
+                        <li data-i18n="goals_li2">Mutual respect</li>
+                        <li data-i18n="principles_li3">Cooperation</li>
+                        <li data-i18n="principles_li4">Self-esteem</li>
+                        <li data-i18n="principles_li5">Love for learning and creation</li>
+                        <li data-i18n="principles_li6">HAPPY FACES…</li>
                     </ul>
                 </div>
             </div>
@@ -150,7 +157,7 @@
                     <img src="./img/foot-print.jpg">
                 </div>
                 <div class="card-text">
-                    <h3>Care and Education of Our Little Friends</h3>
+                    <h3 data-i18n="care_h3">Care and Education of Our Little Friends</h3>
                     <ul>
                         <li>Meets the needs for security, affection, love…</li>
                         <li>Recreational activities (teamwork)</li>
@@ -167,23 +174,24 @@
 
     <section class="departments">
         <div class="content-wrapper">
-            <h2 class="class-title">Our Classes</h2>
-            <div class="class-card-container">
-                <div class="class-card">
-                    <img class="class-img" src="./img/colin-maynard-CEEhmAGpYzE-unsplash.jpg">
-                    <h3>4 Months - 2 Years</h3>
-                    <button class="classBtn">Learn More</button>
-                </div>
-                <div class="class-card">
-                    <img class="class-img" src="./img/tanaphong-toochinda-GagC07wVvck-unsplash.jpg">
-                    <h3>2-3 Years</h3>
-                    <button class="classBtn">Learn More</button>
-                </div>
-                <div class="class-card">
-                    <img class="class-img" src="./img/gabe-pierce-mLqWFEtlIEs-unsplash.jpg">
-                    <h3>3-4 & 4-5 Years</h3>
-                    <button class="classBtn">Learn More</button>
-                </div>
+            <h2 class="class-title" data-i18n="our_classes">Our Classes</h2>
+
+            <div class="class-card">
+                <img class="class-img" src="./img/colin-maynard-CEEhmAGpYzE-unsplash.jpg">
+                <h3 data-i18n="class1_age">4 Months - 2 Years</h3>
+                <button class="classBtn" data-i18n="learn_more">Learn More</button>
+            </div>
+
+            <div class="class-card">
+                <img class="class-img" src="./img/tanaphong-toochinda-GagC07wVvck-unsplash.jpg">
+                <h3 data-i18n="class2_age">2-3 Years</h3>
+                <button class="classBtn" data-i18n="learn_more">Learn More</button>
+            </div>
+
+            <div class="class-card">
+                <img class="class-img" src="./img/gabe-pierce-mLqWFEtlIEs-unsplash.jpg">
+                <h3 data-i18n="class3_age">3-4 & 4-5 Years</h3>
+                <button class="classBtn" data-i18n="learn_more">Learn More</button>
             </div>
 
         </div>
@@ -191,11 +199,10 @@
 
     <!--Footer-->
     <footer class="footer">
-
         <img class="footer-logo" src="./img/logo.jpg">
         <div class="footer-text">
             <div class="contact">
-                <h5>Get in Touch</h5>
+                <h5 data-i18n="get_in_touch">Get in Touch</h5>
                 <ul>
                     <li><i class="fa-solid fa-location-dot icon"></i>
                         Aristotelous 11,
@@ -218,15 +225,15 @@
             </div>
             <div class="social">
                 <i class="fa-brands fa-facebook icon"></i>
-                <p>Follow Us</p>
+                <p data-i18n="follow_us">Follow Us</p>
             </div>
             <div class="quick-links">
-                <h5>Quick Links</h5>
+                <h5 data-i18n="quick_links">Quick Links</h5>
                 <ul>
-                    <li class="footer-quick-links"><a href="#">Our School</a></li>
-                    <li class="footer-quick-links"><a href="#">Gallery</a></li>
-                    <li class="footer-quick-links"><a href="#">Classes and Teachers</a></li>
-                    <li class="footer-quick-links"><a href="#">Contact Us</a></li>
+                    <li class="footer-quick-links"><a href="#" data-i18n="quick_school">Our School</a></li>
+                    <li class="footer-quick-links"><a href="#" data-i18n="quick_gallery">Gallery</a></li>
+                    <li class="footer-quick-links"><a href="#" data-i18n="quick_classes">Classes and Teachers</a></li>
+                    <li class="footer-quick-links"><a href="#" data-i18n="quick_contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
