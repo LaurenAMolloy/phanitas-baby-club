@@ -16,8 +16,8 @@
     "hero_cta_text": "Talk to Us Today",
     "aboutus_title": "About Us",
     "aboutus_aim": "“Aiming to create complete people with strong personalities. And above all <span>LOVE, RESPECT, DEDICATION</span> to each child.”",
-    "aboutus_blurb1": "Welcome to the nursery - childcare center for all-day care, employment and study \"Phanita's Baby Club\"...",
-    "aboutus_blurb2": "We are located in the area of Agios Sylas, Ypsonas... A space of coexistence, collaboration, creation, sharing, love, offering...",
+    "aboutus_blurb1": "Welcome to “Phanita’s Baby Club”; a baby pre-school nursery school for day care social activities and study. Phanita’s Baby Club is a standard centre for pre-school care and education, a place where a child is appropriately trained and socialized so that she/he will be admitted to society.",
+    "aboutus_blurb2": "Phanita’s Baby Club nursery school was founded in 2007 according to all the standards necessary. The school is located in Agios Sylas area, in Ypsonas and near the New General Hospital of Limassol and Kolossi. The school can be characterized as a lively place for, emotional, cognitive and social skills development.A place where a child will not simply spend time, but on the contrary a place for creativity and learning, along with a warm environment of parents-children – teachers relationship. A place for co-existence, co-operation, creativity, where children will learn how to share, love and offer…",
     "why_us": "Why Us",
     "principles": "Our Basic Principles",
     "principles_li1": "I work in a team",
@@ -30,6 +30,15 @@
     "goals_li1": "Socialization",
     "goals_li2": "Mutual respect",
     "care_h3": "Care and Education of Our Little Friends",
+
+    "care_li1":"Meets the needs for security, affection, love…",
+    "care_li2":"Recreational activities (teamwork)",
+    "care_li3": "Development of creativity of expression (mentally and skills)",
+    "care_li4":"Free and creative play",
+    "care_li5":"Development of initiative and independence",
+    "care_li6": "Respect for everyone's cultural and religious identity",
+    "care_li7":"To be able to socialize with all people (young and old)….",
+    
     "our_classes": "Our Classes",
     "class1_age": "4 Months - 2 Years",
     "class2_age": "2-3 Years",
@@ -41,6 +50,10 @@
     "quick_gallery": "Gallery",
     "quick_classes": "Classes and Teachers",
     "quick_contact": "Contact Us",
-    "follow_us": "Follow Us"
+    "follow_us": "Follow Us",
+    "address": "11 Aristotelous Street, Agios Sylas 4193, Ypsonas, Limassol",
+    "email": "phanita2008@hotmail.com",
+    "phone": "(00357) 99 578 375",
+    "working_hours": "Mon - Fri: 06:45 - 17:00"
   }
   

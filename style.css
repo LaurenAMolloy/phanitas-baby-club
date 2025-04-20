@@ -111,8 +111,8 @@ nav {
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .nav-header {
@@ -142,6 +142,22 @@ nav {
 
 .show-sidebar {
     transform: translate(0);
+}
+
+.toggleBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.toggleBtn:hover {
+    color: var(--brightPink);
+    transform: rotate(90deg);
+}
+
+.fa-bars {
+    font-size: 2rem;
 }
 
 .close-btn {
@@ -294,6 +310,7 @@ h3 {
     width: 100%;
     padding: 3rem 0;
     text-align: center;
+    font-size: 40px;
 }
 
 .card-container {
@@ -318,6 +335,7 @@ h3 {
 
 .card-text>h3 {
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .card {
@@ -355,6 +373,7 @@ h3 {
     padding-top: 0;
     padding-bottom: .5rem;
     margin: 0;
+    font-size: 1.3rem;
 }
 
 /* Our Classes/Departments */
@@ -374,6 +393,8 @@ h3 {
 
 .class-title {
     text-align: center;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
 }
 
 .class-card {
@@ -384,6 +405,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.3rem;
 }
 
 .class-card>h3 {
@@ -414,12 +436,24 @@ h3 {
 .footer {
     background-color: var(--brightPink);
     color: var(--palegrey);
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.footer-text {
+    width: 100%;
+}
+
+.footer-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+}
+
 
 .contact {
     padding-top: 1rem;
@@ -427,7 +461,6 @@ h3 {
 }
 
 .contact>h5 {
-
     padding-bottom: .5rem;
 }
 
@@ -438,7 +471,7 @@ h3 {
 .contact ul li {
     padding: .2rem 0;
     margin: 0;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .contact a {
@@ -448,7 +481,8 @@ h3 {
 
 .icon {
     padding-right: .8rem;
-    color: var(--deepPurple)
+    color: var(--deepPurple);
+    font-size: 1.2rem;
 }
 
 .social {
@@ -478,17 +512,14 @@ h3 {
     list-style-type: none;
     margin: 0;
     padding: .5rem 0 0 0;
-    font-size: .8rem;
-
+    font-size: 1rem;
 }
 
 .footer-quick-links a {
     color: white;
-    /* add a contrasting color to make the links visible */
     text-decoration: none;
     /* remove underlines */
     padding: 0.5em;
-    /* add padding to create space around the links */
     position: relative;
     padding-left: 20px;
 
@@ -496,16 +527,12 @@ h3 {
 
 .footer-quick-links a::before {
     content: "→";
-    /* Unicode arrow */
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    /* Center the arrow vertically */
     font-size: 18px;
-    /* Size of the arrow */
     color: var(--deepPurple);
-    /* Lighter color for the arrow */
 }
 
 /* Media Queries */
@@ -532,24 +559,16 @@ h3 {
 
     .side {
         position: static;
-        /* Remove fixed positioning */
         width: auto;
-        /* Allow links to take natural width */
         height: auto;
         transform: none;
-        /* Ensure it's visible */
         background-color: transparent;
-        /* Match main nav */
         box-shadow: none;
-        /* Remove shadow */
         display: flex;
         flex-direction: row;
-        /* Align links horizontally */
         gap: 2rem;
         transform: none !important;
-        /* Ensure it's visible */
         transition: none;
-        /* Disable transition effect */
 
     }
 
@@ -604,6 +623,11 @@ h3 {
     }
 
     /* Footer */
+    .footer-logo {
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
     .footer-text {
         width: 100%;
         display: flex;
@@ -617,6 +641,7 @@ h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 30%;
 
     }
 
