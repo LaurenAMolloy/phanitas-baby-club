@@ -23,7 +23,7 @@ closeBtn.addEventListener("click", function() {
 //Function to fetch langauge data
 async function fetchLanguageData(lang) {
     try {
-        const response = await fetch(`languages/${lang}.json`)
+        const response = await fetch(`/languages/${lang}.json`)
         if(!response.ok) throw new Error("Langauge")
         return response.json()
     
