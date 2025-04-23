@@ -67,30 +67,30 @@
 
     <!--Get in Touch-->
     <section class="get-touch">
-        <div class="content-wrapper">
-            <div class="get-in-touch-intro">
-                <div class="in-touch-info">
-                    <h1>Get In Touch</h1>
-                    <P>Have any questions? You can contact us by filling in the form below, and soon you will get a
-                        reply.
-                    </P>
-                </div>
-                <div class="our-address">
-                    <i class="fa-solid fa-location-dot icon contact-icon"></i>
-                    <h3>Our Address</h3>
-                    <address data-i18n="address">
-                        11 Aristotelous Street, Agios Sylas 4193, Ypsonas, Limassol
-                    </address>
-                </div>
-                <div class="contact-details">
-                    <i class="fa-solid fa-phone icon contact-icon"></i><br>
-                    <h3>Our Contact Information</h3>
-                    <a href="mailto:phanita2008@hotmail.com">
-                        <span data-i18n="email">phanita2008@hotmail.com</span>
-                    </a><br>
-                    <a href="tel:+0035799578375" data-i18n="phone">(00357) 99 578 375
-                    </a>
-                </div>
+        <div class="get-in-touch-intro">
+            <div class="in-touch-info">
+                <h1>Get In Touch</h1>
+                <P>Have any questions? You can contact us by filling in the form below, and soon you will get a
+                    reply.
+                </P>
+                <img class="contact-img" src="../img/christopher-ryan-JoS5xzulJx4-unsplash.jpg" alt="child with paints">
+            </div>
+            <div class="our-address">
+                <i class="fa-solid fa-location-dot icon contact-icon"></i>
+                <h3 class="contact-h3">Our Address</h3>
+                <address class="address" data-i18n="address">
+                    11 Aristotelous Street, Agios Sylas 4193, Ypsonas, Limassol
+                </address>
+            </div>
+            <div class="contact-details">
+                <i class="fa-solid fa-phone icon contact-icon"></i>
+                <i class="fa-solid fa-envelope icon contact-icon"></i><br>
+                <h3 class="contact-h3">Our Contact Information</h3>
+                <a href="mailto:phanita2008@hotmail.com">
+                    <span class="email" data-i18n="email">phanita2008@hotmail.com</span>
+                </a><br>
+                <a class="phone-number" href="tel:+0035799578375" data-i18n="phone">(00357) 99 578 375
+                </a>
             </div>
         </div>
 
@@ -108,43 +108,44 @@
     </section>
 
     <!-- Contact Form -->
-    <section class="contact-form">
+    <section class="contact-form-section">
         <h2>Contact Us</h2>
-        <form action="">
-            <p>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
-            </p>
-            <p>
-                <label for="mail">Email:</label>
-                <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-                <label for="Subject">Subject:</label>
-                <input type="text" name="subject" id="subject" required>
-            </p>
-            <p>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message"></textarea>
-            </p>
-            <p class="button">
-                <button type="submit">Send your message</button>
-            </p>
-        </form>
-    </section>
+        <div class="form-container">
+            <form class="contact-form" action="">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </p>
+                <p>
+                    <label for="mail">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </p>
+                <p>
+                    <label for="Subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+                </p>
 
+                <button class="submitBtn" type="submit">Send your message</button>
+
+            </form>
+        </div>
+    </section>
 
     <!--Footer-->
     <footer class="footer">
-        <img class="footer-logo" src="../img/logo.jpg">
+        <img class="footer-logo" src="../img/logo.jpg" alt="logo">
         <div class="footer-text">
             <div class="contact">
                 <h4 data-i18n="get_in_touch">Get in Touch</h4>
                 <ul>
                     <li class="footer-item">
                         <i class="fa-solid fa-location-dot icon"></i>
-                        <address data-i18n="address">
-                            11 Aristotelous Street, Agios Sylas 4193, Ypsonas, Limassol
+                        <address class="address" data-i18n="address">
+                            11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
                         </address>
                     </li>
                     <li>
@@ -172,9 +173,13 @@
                     <li class="footer-quick-links"><a href="#" data-i18n="quick_school">Our School</a></li>
                     <li class="footer-quick-links"><a href="#" data-i18n="quick_gallery">Gallery</a></li>
                     <li class="footer-quick-links"><a href="#" data-i18n="quick_classes">Classes and Teachers</a></li>
-                    <li class="footer-quick-links"><a href="#" data-i18n="quick_contact">Contact Us</a></li>
+                    <li class="footer-quick-links"><a href="./contact/index.html" data-i18n="quick_contact">Contact
+                            Us</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="copy-right">
+            <div>Copyright © <span id="spanYear"></span> Phanita's Baby Club. All rights reserved.</div>
         </div>
     </footer>
     <!--Footer ends here-->

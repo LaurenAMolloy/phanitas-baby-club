@@ -249,6 +249,7 @@ h3 {
     border-radius: 2rem;
     border: none;
     width: 50%;
+    margin-top: 1rem;
 }
 
 .hero-cta:hover {
@@ -265,6 +266,21 @@ h3 {
 
 .hero-text>p:last-of-type {
     padding-bottom: 1rem;
+}
+
+.address {
+    font-style: normal;
+    padding: .8rem 0;
+}
+
+.email {
+    color: var(--deepPurple);
+    font-weight: 400;
+}
+
+.phone-number {
+    font-weight: 600;
+    color: var(--brightPink);
 }
 
 
@@ -540,16 +556,23 @@ h3 {
     color: var(--deepPurple);
 }
 
+.copy-right {
+    padding: 2rem 0;
+}
+
 /* Contact Styles */
 
 .get-in-touch-intro {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem 1rem;
+    width: 100%;
+
 }
 
 .contact-icon {
-    background-color: var(--palePurple);
+    background-color: var(--lightGreen);
+    color: var(--brightPink);
     padding: .8rem;
     border-radius: .5rem;
     margin-bottom: .5rem;
@@ -581,6 +604,76 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.contact-img {
+    border-radius: 2rem;
+    border: 2px solid var(--brightPink);
+    box-shadow: 2px 2px 5px var(--phanitasPurple);
+    margin: 2rem auto;
+}
+
+/* Form Styles */
+.contact-form-section {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightGreen);
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--palegrey);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .8rem;
+    margin: 1rem 0;
+    border: 3px solid var(--phanitasPurple);
+    border-radius: .6rem;
+}
+
+input,
+textarea:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    border: 3px solid var(--brightPink);
+}
+
+.submitBtn {
+    margin: 0 auto;
+    background-color: var(--phanitasPurple);
+    color: var(--palegrey);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.submitBtn:hover {
+    background-color: var(--brightPink);
 }
 
 /* Media Queries */
@@ -690,7 +783,32 @@ h3 {
         justify-content: center;
         align-items: center;
         max-width: 30%;
+    }
 
+    /* Our Classes */
+
+    .get-in-touch-intro {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        /* Optional: adds space between elements */
+        flex-wrap: wrap;
+        /* Optional: handles responsiveness */
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .in-touch-info,
+    .our-address,
+    .contact-details {
+        flex: 0 0 30%;
+        box-sizing: border-box;
+        /* Helps manage padding/border sizing */
+    }
+
+    .contact-h3 {
+        padding-bottom: .5rem;
     }
 
 

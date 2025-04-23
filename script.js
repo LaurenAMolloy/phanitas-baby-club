@@ -1,7 +1,8 @@
 const toggle = document.querySelector(".toggleBtn");
 const closeBtn = document.querySelector(".close-btn");
 const sideBar = document.querySelector(".side");
-const welcome= document.getElementById("welcome")
+const welcome= document.getElementById("welcome");
+const year = document.getElementById("spanYear");
 
 //Toggle show class on side nav
 toggle.addEventListener("click", function() {
@@ -58,7 +59,7 @@ function updateContent(langData) {
 async function changeLanguage(lang) {
     //Set lang to local storage
     //Lang persists even after they leave the website
-    await setLanguagePreference(lang);
+    setLanguagePreference(lang);
     
     //Retrieve content from json files
     const langData = await fetchLanguageData(lang)
@@ -71,3 +72,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
   });
+
+//update the date automatically
+var date = new Date();
+var yearNow = date.getFullYear();
+year.textContent = yearNow
