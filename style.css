@@ -735,6 +735,21 @@ input:focus {
         width: 400px
     }
 
+    .meals {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .meals>div {
+        flex: 1 1 50%
+    }
+
+    .meals-text>h3 {
+        padding-top: 0;
+    }
+
 
 }
 
@@ -908,7 +923,7 @@ input:focus {
     .class-img-wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
         align-items: center;
     }
 
@@ -922,10 +937,9 @@ input:focus {
 
     /* Single-direction drop shadow */
     hr {
-        height: 12px;
+        height: 6px;
         border: 0;
         box-shadow: inset 0 12px 12px -12px var(--phanitasPurple);
-        padding-bottom: 3rem;
     }
 
     .classroom {
@@ -934,18 +948,11 @@ input:focus {
         padding-top: 2rem;
     }
 
+    .class-img-wrapper {
+        padding: 0;
+    }
+
     .classroom>div {
-        flex: 1 1 50%
-    }
-
-    .meals {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        padding-top: 2rem;
-    }
-
-    .meals>div {
         flex: 1 1 50%
     }
 
