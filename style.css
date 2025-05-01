@@ -185,6 +185,7 @@ li {
 a {
     text-decoration: none;
     font-weight: 500;
+    color: var(--deepPurple)
 }
 
 .phone {
@@ -250,6 +251,8 @@ h3 {
     border: none;
     width: 50%;
     margin-top: 1rem;
+    display: block;
+    text-align: center;
 }
 
 .hero-cta:hover {
@@ -258,7 +261,10 @@ h3 {
 }
 
 .hero-img,
-.about-us-img {
+.about-us-img,
+.playground-img,
+.classroom-img,
+.meals-img {
     border-radius: 2rem;
     border: 2px solid var(--brightPink);
     box-shadow: 2px 2px 5px var(--phanitasPurple);
@@ -301,10 +307,6 @@ h3 {
     padding-bottom: 2rem;
 }
 
-.about-us-card>h2 {
-    font-size: 40px;
-}
-
 .about-us-card>p {
     padding-bottom: 1.5rem;
 }
@@ -331,7 +333,6 @@ h3 {
     width: 100%;
     padding: 3rem 0;
     text-align: center;
-    font-size: 40px;
 }
 
 .card-container {
@@ -345,7 +346,6 @@ h3 {
 
 .card-container>h2 {
     text-align: center;
-    font-size: 40px;
     padding: 0;
 }
 
@@ -356,7 +356,6 @@ h3 {
 
 .card-text>h3 {
     text-align: center;
-    font-size: 1.6rem;
 }
 
 .card {
@@ -394,7 +393,7 @@ h3 {
     padding-top: 0;
     padding-bottom: .5rem;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 /* Our Classes/Departments */
@@ -414,7 +413,6 @@ h3 {
 
 .class-title {
     text-align: center;
-    font-size: 40px;
     margin-bottom: 1.5rem;
 }
 
@@ -478,11 +476,11 @@ h3 {
 
 .contact {
     padding-top: 1rem;
-    width: 80%;
+    width: 100%;
 }
 
-.contact>h5 {
-    padding-bottom: .5rem;
+.contact>h4 {
+    padding-bottom: .8rem;
 }
 
 .contact ul {
@@ -504,6 +502,11 @@ h3 {
     padding-right: .8rem;
     color: var(--deepPurple);
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--phanitasGreen)
 }
 
 .social {
@@ -624,7 +627,7 @@ h3 {
 }
 
 .form-container {
-    width: 400px;
+    width: 80%;
     margin: 50px auto;
     background-color: white;
     padding: 2rem;
@@ -676,12 +679,63 @@ input:focus {
     background-color: var(--brightPink);
 }
 
+/* Our School */
+
+.our-schedule,
+.our-school,
+.our-health {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-schedule {
+    background-color: var(--lightGreen);
+}
+
+.playground-img {
+    margin: 2rem 0;
+}
+
+.playground-text>p {
+    margin: 1rem 0;
+}
+
+.classroom>p {
+    margin-top: 2rem;
+}
+
+.class-img-wrapper {
+    padding: 2rem 0;
+}
+
+.schedule {
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.schedule>p {
+    padding-bottom: .8rem;
+}
+
+.meals-text>h3 {
+    padding-top: 2rem;
+}
+
+
+
 /* Media Queries */
 /* Tablet Styles */
 @media screen and (min-width: 676px) {
     .side {
         width: 400px
     }
+
+
 }
 
 /* Desktop Styles */
@@ -811,5 +865,88 @@ input:focus {
         padding-bottom: .5rem;
     }
 
+    /* Contact Form */
+
+    .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-group label {
+        width: 75px;
+        /* Adjust based on layout */
+        margin-right: 1rem;
+        text-align: left;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        display: flex;
+        flex: 1;
+        margin: 0;
+        /* Remove margin to align with label */
+    }
+
+    .submitBtn {
+        margin-top: 1rem;
+    }
+
+    /* Contact Form */
+
+    .playground {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .playground>div {
+        flex: 1 1 50%;
+    }
+
+    .playground-img-wrapper,
+    .class-img-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .playground {
+        margin: 3rem 0;
+    }
+
+    .playground-text>p {
+        padding-bottom: 1rem;
+    }
+
+    /* Single-direction drop shadow */
+    hr {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px var(--phanitasPurple);
+        padding-bottom: 3rem;
+    }
+
+    .classroom {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 2rem;
+    }
+
+    .classroom>div {
+        flex: 1 1 50%
+    }
+
+    .meals {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .meals>div {
+        flex: 1 1 50%
+    }
 
 }

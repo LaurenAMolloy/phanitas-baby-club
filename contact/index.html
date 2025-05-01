@@ -38,19 +38,19 @@
                     </button>
                     <ul class="links">
                         <li>
-                            <a href="#" data-i18n="home">Home</a>
+                            <a href="../index.html" data-i18n="home">Home</a>
                         </li>
                         <li>
-                            <a href="#" data-i18n="school">Our School</a>
+                            <a href="../our_school/index.html" data-i18n="school">Our School</a>
                         </li>
                         <li>
-                            <a href="#" data-i18n="gallery">Gallery</a>
+                            <a href="../gallery/" data-i18n="gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="#" data-i18n="teachers-classes">Teachers & Classes</a>
+                            <a href="../teachers_classes/" data-i18n="teachers-classes">Teachers & Classes</a>
                         </li>
                         <li>
-                            <a href="#" data-i18n="contact_us">Contact Us</a>
+                            <a href="../contact/index.html" data-i18n="contact_us">Contact Us</a>
                         </li>
                         <li><a href="index.html" onclick="changeLanguage('en')" data-i18n="english">English</a></li>
                         <li><a href="index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a></li>
@@ -64,76 +64,76 @@
         </nav>
     </header>
     <!--Header ends here-->
-
-    <!--Get in Touch-->
-    <section class="get-touch">
-        <div class="get-in-touch-intro">
-            <div class="in-touch-info">
-                <h1>Get In Touch</h1>
-                <P>Have any questions? You can contact us by filling in the form below, and soon you will get a
-                    reply.
-                </P>
-                <img class="contact-img" src="../img/christopher-ryan-JoS5xzulJx4-unsplash.jpg" alt="child with paints">
+    <main>
+        <!--Get in Touch-->
+        <section class="get-touch">
+            <div class="get-in-touch-intro">
+                <div class="in-touch-info">
+                    <h1 data-i18n="contact_get_in_touch">Get In Touch</h1>
+                    <p data-i18n="contact_description">Have any questions? You can contact us by filling in the form
+                        below, and soon you will get a reply.</p>
+                    <img class="contact-img" src="../img/christopher-ryan-JoS5xzulJx4-unsplash.jpg"
+                        alt="child with paints">
+                </div>
+                <div class="our-address">
+                    <i class="fa-solid fa-location-dot icon contact-icon"></i>
+                    <h3 class="contact-h3" data-i18n="contact_our_address">Our Address</h3>
+                    <address class="address" data-i18n="address">
+                        11 Aristotelous Street, Agios Sylas 4193, Ypsonas, Limassol
+                    </address>
+                </div>
+                <div class="contact-details">
+                    <i class="fa-solid fa-phone icon contact-icon"></i>
+                    <i class="fa-solid fa-envelope icon contact-icon"></i>
+                    <h3 class="contact-h3" data-i18n="contact_our_info">Our Contact Information</h3>
+                    <a href="mailto:phanita2008@hotmail.com">
+                        <span class="email" data-i18n="email">phanita2008@hotmail.com</span>
+                    </a><br>
+                    <a class="phone-number" href="tel:+0035799578375" data-i18n="phone">(00357) 99 578 375</a>
+                </div>
             </div>
-            <div class="our-address">
-                <i class="fa-solid fa-location-dot icon contact-icon"></i>
-                <h3 class="contact-h3">Our Address</h3>
-                <address class="address" data-i18n="address">
-                    11 Aristotelous Street, Agios Sylas 4193, Ypsonas, Limassol
-                </address>
+        </section>
+
+        <!-- Map -->
+        <section class="map">
+            <figure>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.8519886055665!2d32.95846901584944!3d34.70003739267326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e7315f9c652a5d%3A0xac27ae76b0ae3784!2sPhanitas%20Baby%20Club!5e0!3m2!1sen!2s!4v1745310866929!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h2 data-i18n="form_contact_us">Contact Us</h2>
+            <div class="form-container">
+                <form class="contact-form" action="">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_label_name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your name"
+                            data-i18n-placeholder="form_placeholder_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail" data-i18n="form_label_email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email"
+                            data-i18n-placeholder="form_placeholder_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="form_label_subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject"
+                            data-i18n-placeholder="form_placeholder_subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_label_message">Message:</label>
+                        <textarea name="message" id="message" placeholder="Write your message here"
+                            data-i18n-placeholder="form_placeholder_message"></textarea>
+                    </div>
+                    <button class="submitBtn" type="submit" data-i18n="form_send_message">Send your message</button>
+                </form>
             </div>
-            <div class="contact-details">
-                <i class="fa-solid fa-phone icon contact-icon"></i>
-                <i class="fa-solid fa-envelope icon contact-icon"></i><br>
-                <h3 class="contact-h3">Our Contact Information</h3>
-                <a href="mailto:phanita2008@hotmail.com">
-                    <span class="email" data-i18n="email">phanita2008@hotmail.com</span>
-                </a><br>
-                <a class="phone-number" href="tel:+0035799578375" data-i18n="phone">(00357) 99 578 375
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Map -->
-    <section class="map">
-        <figure>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.8519886055665!2d32.95846901584944!3d34.70003739267326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e7315f9c652a5d%3A0xac27ae76b0ae3784!2sPhanitas%20Baby%20Club!5e0!3m2!1sen!2s!4v1745310866929!5m2!1sen!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </figure>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="contact-form-section">
-        <h2>Contact Us</h2>
-        <div class="form-container">
-            <form class="contact-form" action="">
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                </p>
-                <p>
-                    <label for="mail">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" required>
-                </p>
-                <p>
-                    <label for="Subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                </p>
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
-                </p>
-
-                <button class="submitBtn" type="submit">Send your message</button>
-
-            </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer class="footer">
@@ -144,9 +144,11 @@
                 <ul>
                     <li class="footer-item">
                         <i class="fa-solid fa-location-dot icon"></i>
-                        <address class="address" data-i18n="address">
-                            11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
-                        </address>
+                        <a href="https://www.google.com/maps?q=11+Aristotelous+Street,+Agios+Sylas+4193,+Ypsonas,+Limassol"
+                            target="_blank">
+                            <address class="footer-address" data-i18n="address">
+                                11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
+                            </address>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope icon"></i>
@@ -164,15 +166,18 @@
                 </ul>
             </div>
             <div class="social">
-                <i class="fa-brands fa-facebook icon"></i>
+                <a href="https://www.facebook.com/PhanitasBabyClub/" class="fa-brands fa-facebook icon"></a>
                 <p data-i18n="follow_us">Follow Us</p>
             </div>
             <div class="quick-links">
                 <h5 data-i18n="quick_links">Quick Links</h5>
                 <ul>
-                    <li class="footer-quick-links"><a href="#" data-i18n="quick_school">Our School</a></li>
-                    <li class="footer-quick-links"><a href="#" data-i18n="quick_gallery">Gallery</a></li>
-                    <li class="footer-quick-links"><a href="#" data-i18n="quick_classes">Classes and Teachers</a></li>
+                    <li class="footer-quick-links"><a href="./our_school/index.html" data-i18n="quick_school">Our
+                            School</a></li>
+                    <li class="footer-quick-links"><a href="./gallery/index.html" data-i18n="quick_gallery">Gallery</a>
+                    </li>
+                    <li class="footer-quick-links"><a href="./teachers_classes/index.html"
+                            data-i18n="quick_classes">Classes and Teachers</a></li>
                     <li class="footer-quick-links"><a href="./contact/index.html" data-i18n="quick_contact">Contact
                             Us</a></li>
                 </ul>

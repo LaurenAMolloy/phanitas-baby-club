@@ -53,6 +53,21 @@
     "address": " Αριστοτέλους 11, Άγιος Σύλας  4193, Ύψωνας, Λεμεσός",
     "email": "phanita2008@hotmail.com",
     "phone": "(00357) 99 578 375",
-    "working_hours": "Δευ - Παρ: 06:45 - 17:00"
+    "working_hours": "Δευ - Παρ: 06:45 - 17:00",
+
+    "contact_get_in_touch": "Επικοινωνήστε Μαζί Μας",
+    "contact_description": "Έχετε απορίες; Μπορείτε να επικοινωνήσετε μαζί μας συμπληρώνοντας την παρακάτω φόρμα και σύντομα θα λάβετε απάντηση.",
+    "contact_our_address": "Η Διεύθυνσή Μας",
+    "contact_our_info": "Στοιχεία Επικοινωνίας",
+    "form_contact_us": "Επικοινωνία",
+    "form_label_name": "Όνομα:",
+    "form_label_email": "Ηλεκτρονική Διεύθυνση:",
+    "form_label_subject": "Θέμα:",
+    "form_label_message": "Μήνυμα:",
+    "form_placeholder_name": "Το όνομά σας",
+    "form_placeholder_email": "Το email σας",
+    "form_placeholder_subject": "Θέμα",
+    "form_placeholder_message": "Γράψτε το μήνυμά σας εδώ",
+    "form_send_message": "Αποστολή μηνύματος"
   }
   
