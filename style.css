@@ -681,6 +681,17 @@ input:focus {
 
 /* Our School */
 
+.content-wrapper-school {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.content-wrapper-school>h1 {
+    padding: 2rem 0;
+    text-align: center;
+}
+
 .our-schedule,
 .our-school,
 .our-health {
@@ -694,20 +705,46 @@ input:focus {
     background-color: var(--lightGreen);
 }
 
+.playground-text>h4,
+.class-play-text>h3 {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
 .playground-img {
     margin: 2rem 0;
 }
 
 .playground-text>p {
     margin: 1rem 0;
+    padding: 0 2rem;
 }
 
-.classroom>p {
-    margin-top: 2rem;
+.playground-img-wrapper {
+    background-color: var(--brightPink);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.class-play-text>p {
+    margin: 1rem 0;
+    padding: 0 2rem;
+}
+
+.classroom {
+    margin-bottom: 2rem;
 }
 
 .class-img-wrapper {
     padding: 2rem 0;
+    background-color: var(--phanitasPurple);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .schedule {
@@ -923,12 +960,16 @@ input:focus {
     .class-img-wrapper {
         display: flex;
         flex-direction: column;
-
+        justify-content: center;
         align-items: center;
     }
 
+    .class-img-wrapper {
+        height: 350px;
+    }
+
     .playground {
-        margin: 3rem 0;
+        padding: 3rem 0;
     }
 
     .playground-text>p {
