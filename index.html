@@ -11,11 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind+Madurai:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!--Styles-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/8e3a662c3c.js" crossorigin="anonymous"></script>
     <!--Scripts-->
-    <script src="./script.js" defer></script>
+    <script src="/script.js" defer></script>
     <title>Phanita's Baby Club</title>
 </head>
 
@@ -38,22 +38,22 @@
                     </button>
                     <ul class="links">
                         <li>
-                            <a href="index.html" data-i18n="home">Home</a>
+                            <a href="/index.html" data-i18n="home">Home</a>
                         </li>
                         <li>
-                            <a href="./our_school/index.html" data-i18n="school">Our School</a>
+                            <a href="/our_school/" data-i18n="school">Our School</a>
                         </li>
                         <li>
-                            <a href="./gallery/index.html" data-i18n="gallery">Gallery</a>
+                            <a href="/gallery/" data-i18n="gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="./teachers_classes/index.html" data-i18n="teachers-classes">Teachers & Classes</a>
+                            <a href="/classes/" data-i18n="teachers-classes">Classes</a>
                         </li>
                         <li>
-                            <a href="./contact/index.html" data-i18n="contact_us">Contact Us</a>
+                            <a href="/contact/" data-i18n="contact_us">Contact Us</a>
                         </li>
-                        <li><a href="index.html" onclick="changeLanguage('en')" data-i18n="english">English</a></li>
-                        <li><a href="index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a></li>
+                        <li><a href="/index.html" onclick="changeLanguage('en')" data-i18n="english">English</a></li>
+                        <li><a href="/index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a></li>
                         <li class="phone">
                             <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
                         </li>
@@ -182,26 +182,28 @@
 
         </section>
 
+        <!--Goals-->
         <section class="departments">
             <div class="content-wrapper">
                 <h2 class="class-title" data-i18n="our_classes">Our Classes</h2>
+                <div class="class-card-container">
+                    <div class="class-card">
+                        <img class="class-img" src="./img/colin-maynard-CEEhmAGpYzE-unsplash.jpg">
+                        <h3 data-i18n="class1_age">4 Months - 2 Years</h3>
+                        <button class="classBtn" data-i18n="learn_more">Learn More</button>
+                    </div>
 
-                <div class="class-card">
-                    <img class="class-img" src="./img/colin-maynard-CEEhmAGpYzE-unsplash.jpg">
-                    <h3 data-i18n="class1_age">4 Months - 2 Years</h3>
-                    <button class="classBtn" data-i18n="learn_more">Learn More</button>
-                </div>
+                    <div class="class-card">
+                        <img class="class-img" src="./img/tanaphong-toochinda-GagC07wVvck-unsplash.jpg">
+                        <h3 data-i18n="class2_age">2-3 Years</h3>
+                        <button class="classBtn" data-i18n="learn_more">Learn More</button>
+                    </div>
 
-                <div class="class-card">
-                    <img class="class-img" src="./img/tanaphong-toochinda-GagC07wVvck-unsplash.jpg">
-                    <h3 data-i18n="class2_age">2-3 Years</h3>
-                    <button class="classBtn" data-i18n="learn_more">Learn More</button>
-                </div>
-
-                <div class="class-card">
-                    <img class="class-img" src="./img/gabe-pierce-mLqWFEtlIEs-unsplash.jpg">
-                    <h3 data-i18n="class3_age">3-4 & 4-5 Years</h3>
-                    <button class="classBtn" data-i18n="learn_more">Learn More</button>
+                    <div class="class-card">
+                        <img class="class-img" src="./img/gabe-pierce-mLqWFEtlIEs-unsplash.jpg">
+                        <h3 data-i18n="class3_age">3-4 & 4-5 Years</h3>
+                        <button class="classBtn" data-i18n="learn_more">Learn More</button>
+                    </div>
                 </div>
 
             </div>
