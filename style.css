@@ -267,7 +267,9 @@ h3 {
 
 .hero-img,
 .about-us-img,
-.meals-img {
+.baby-img,
+.toddler-img,
+.class3-4-img {
     border-radius: 2rem;
     border: 2px solid var(--brightPink);
     box-shadow: 2px 2px 5px var(--phanitasPurple);
@@ -362,8 +364,8 @@ h3 {
 }
 
 .card {
-    background-color: var(--phanitasYellow);
-    color: var(--deepPurple);
+    background-color: var(--darkPurple);
+    color: var(--palegrey);
     border-radius: 2rem;
     padding: 2rem;
     width: 80%;
@@ -709,16 +711,22 @@ input:focus {
     background-color: var(--lightGreen);
 }
 
-.playground-text>h4,
-.class-play-text>h3 {
-    padding: 2rem 2rem;
+.playground-text>h1 {
+    padding: 2rem;
 }
 
-.playground-img,
-.classroom-img {
-    margin: 2rem 1rem;
-    border: 3px solid var(--palegrey);
-    border-radius: 1rem;
+.playground-text>h4 {
+    padding: 0rem 2rem;
+}
+
+.class-play-text>h3 {
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.playground-text,
+.class-play-text {
+    padding-bottom: 1rem;
+    margin-top: .2rem;
 }
 
 .playground-text>p {
@@ -728,7 +736,7 @@ input:focus {
 
 .playground-img-wrapper {
     background-color: var(--brightPink);
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -739,14 +747,10 @@ input:focus {
     padding: 0 2rem;
 }
 
-.classroom {
-    margin-bottom: 2rem;
-}
-
 .class-img-wrapper {
     padding: 2rem 0;
     background-color: var(--phanitasPurple);
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -764,8 +768,12 @@ input:focus {
     padding-bottom: .8rem;
 }
 
-.meals-text>h3 {
-    padding-top: 2rem;
+.school-calendar {
+    padding: 1rem 0rem;
+}
+
+.meals-text {
+    padding: 2rem;
 }
 
 /* Our Classes Page */
@@ -845,12 +853,39 @@ ul {
     padding-left: 20px;
 }
 
-
 .support-care {
     margin-top: 3rem
 }
 
+.baby-class,
+.two-three_class,
+.three-four-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.baby-text,
+.class3-4-text {
+    padding-bottom: 2rem;
+}
+
+.toddler-img-container,
+.class3-4-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.class2-3-text {
+    padding-bottom: 2rem;
+}
+
+.baby-text>ul>li,
+.class2-3-text>ul>li,
+.class3-4-text>ul>li {
+    padding: .2rem;
+}
 
 /* Media Queries */
 /* Tablet Styles */
@@ -863,7 +898,6 @@ ul {
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
-        padding-top: 2rem;
     }
 
     .meals>div {
@@ -871,7 +905,20 @@ ul {
     }
 
     .meals-text>h3 {
-        padding-top: 0;
+        padding-top: 1rem;
+    }
+
+    .baby-class>.content-wrapper,
+    .two-three_class>.content-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px
+    }
+
+    .baby-text,
+    .class2-3-text,
+    .class3-4-text {
+        flex: 0 0 50%;
     }
 
 
@@ -1042,11 +1089,9 @@ ul {
     }
 
     /* Our School */
-
     .playground {
         display: flex;
         flex-direction: row;
-        gap: 20px;
     }
 
     .playground>div {
@@ -1068,10 +1113,6 @@ ul {
         max-width: 500px;
     }
 
-    .playground {
-        padding: 3rem 0;
-    }
-
     .playground-text>p {
         padding-bottom: 1rem;
     }
@@ -1085,8 +1126,6 @@ ul {
 
     .classroom {
         display: flex;
-        flex-direction: row-reverse;
-        padding-top: 2rem;
     }
 
     .class-img-wrapper {
@@ -1095,6 +1134,12 @@ ul {
 
     .classroom>div {
         flex: 1 1 50%
+    }
+
+    .three-four-class>.content-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px
     }
 
 }
