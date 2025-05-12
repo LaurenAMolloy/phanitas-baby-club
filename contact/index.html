@@ -49,8 +49,10 @@
                         <li>
                             <a href="index.html" data-i18n="contact_us">Contact Us</a>
                         </li>
-                        <li><a href="/index.html" onclick="changeLanguage('en')" data-i18n="english">English</a></li>
-                        <li><a href="/index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a></li>
+                        <li><a href="/contact/index.html" onclick="changeLanguage('en')" data-i18n="english">English</a>
+                        </li>
+                        <li><a href="/contact/index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a>
+                        </li>
                         <li class="phone">
                             <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
                         </li>
@@ -93,26 +95,28 @@
 
         <!-- Map -->
         <section class="map">
-            <figure>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.8519886055665!2d32.95846901584944!3d34.70003739267326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e7315f9c652a5d%3A0xac27ae76b0ae3784!2sPhanitas%20Baby%20Club!5e0!3m2!1sen!2s!4v1745310866929!5m2!1sen!2s"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </figure>
+            <div class="map-div">
+                <figure>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.8519886055665!2d32.95846901584944!3d34.70003739267326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e7315f9c652a5d%3A0xac27ae76b0ae3784!2sPhanitas%20Baby%20Club!5e0!3m2!1sen!2s!4v1745310866929!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </div>
         </section>
 
         <!-- Contact Form -->
         <section class="contact-form-section">
             <h2 data-i18n="form_contact_us">Contact Us</h2>
             <div class="form-container">
-                <form class="contact-form" action="">
+                <form class="contact-form">
                     <div class="form-group">
                         <label for="name" data-i18n="form_label_name">Name:</label>
                         <input type="text" name="name" id="name" placeholder="Your name"
                             data-i18n-placeholder="form_placeholder_name" required>
                     </div>
                     <div class="form-group">
-                        <label for="mail" data-i18n="form_label_email">Email:</label>
+                        <label for="email" data-i18n="form_label_email">Email:</label>
                         <input type="email" name="email" id="email" placeholder="Your email"
                             data-i18n-placeholder="form_placeholder_email" required>
                     </div>
@@ -132,6 +136,7 @@
         </section>
     </main>
 
+
     <!--Footer-->
     <footer class="footer">
         <img class="footer-logo" src="../img/logo.jpg" alt="logo">
@@ -142,10 +147,10 @@
                     <li class="footer-item">
                         <i class="fa-solid fa-location-dot icon"></i>
                         <a href="https://www.google.com/maps?q=11+Aristotelous+Street,+Agios+Sylas+4193,+Ypsonas,+Limassol"
-                            target="_blank">
-                            <address class="footer-address" data-i18n="address">
-                                11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
-                            </address>
+                            target="_blank"></a>
+                        <address class="footer-address" data-i18n="address">
+                            11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
+                        </address>
                     </li>
                     <li>
                         <i class="fa-solid fa-envelope icon"></i>

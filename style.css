@@ -9,6 +9,7 @@
 /* 2. Remove default margin */
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
     background-color: var(--palegrey);
+    overflow-x: hidden;
 }
 
 /* 6. Improve media defaults */
@@ -102,6 +104,7 @@ body {
     font-size: 16px;
     color: #3D1C55;
     background-color: var(--palegrey);
+    width: 100%;
 }
 
 header {
@@ -113,6 +116,33 @@ header {
     width: 90%;
     margin: 50px 0;
 
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: transform 400ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0)
 }
 
 /* Nav Styles */
@@ -477,6 +507,10 @@ h3 {
     align-items: flex-start;
     margin-bottom: 10px;
     flex-wrap: nowrap;
+}
+
+.footer-item>.fa-location-dot {
+    padding-top: .2rem;
 }
 
 

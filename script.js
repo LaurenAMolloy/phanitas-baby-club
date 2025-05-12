@@ -3,6 +3,8 @@ const closeBtn = document.querySelector(".close-btn");
 const sideBar = document.querySelector(".side");
 const welcome= document.getElementById("welcome");
 const year = document.getElementById("spanYear");
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
 
 //Toggle show class on side nav
 toggle.addEventListener("click", function() {
@@ -55,15 +57,22 @@ function updateContent(langData) {
     });
 }
 
+function updatePlaceholders(langData) {
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      el.setAttribute('placeholder', langData[key] || key);
+    });
+  }
+
 //Function to change language
 async function changeLanguage(lang) {
     //Set lang to local storage
     //Lang persists even after they leave the website
     setLanguagePreference(lang);
-    
     //Retrieve content from json files
     const langData = await fetchLanguageData(lang)
     updateContent(langData);
+    updatePlaceholders(langData);
 }
 
 // Call updateContent() on page load
@@ -71,7 +80,39 @@ window.addEventListener("DOMContentLoaded", async () => {
     const userPreferredLanguage = localStorage.getItem("language") || "en";
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
+    updatePlaceholders(langData);
   });
+
+
+
+//Fade images into view with intersection observer
+const appearOptions = {
+    //whole page into view before fade
+    threshold: 0,
+    rootMargin: "0px 0px -100px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver
+(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            return;
+        } else {
+        entry.target.classList.add("appear");
+        appearOnScroll.unobserve(entry.target);
+    }
+    })
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader)
+});
+
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider)
+})
+
+
 
 //update the date automatically
 var date = new Date();
