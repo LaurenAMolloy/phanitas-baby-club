@@ -80,7 +80,8 @@ img {
 :root {
     --brightGreen: #b8d43a;
     --lightGreen: #D4E653;
-    --brightPink: #f4229d;
+    --brightPink: #DA0278;
+    --offWhite: #F6F4F5;
     --brightRed: #ce023d;
     --darkgrey: #32373c;
     --darkPurple: #5A2D75;
@@ -230,16 +231,18 @@ a {
 .phone a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: var(--brightPink);
+    background-color: var(--phanitasPurple);
     /* Use a standout color */
     color: white;
     font-weight: 700;
     text-decoration: none;
     border-radius: 2rem;
+    border: none;
+
 }
 
 .phone a:hover {
-    background-color: var(--phanitasPurple);
+    background-color: var(--darkPurple);
     /* Slight hover effect */
 }
 
@@ -277,7 +280,7 @@ h3 {
 
 .hero-cta {
     padding: 0.8rem 1rem;
-    background-color: var(--brightPink);
+    background-color: var(--phanitasPurple);
     /* Use a standout color */
     color: white;
     font-weight: 700;
@@ -291,7 +294,7 @@ h3 {
 }
 
 .hero-cta:hover {
-    background-color: var(--phanitasPurple);
+    background-color: var(--darkPurple);
     /* Slight hover effect */
 }
 
@@ -301,7 +304,6 @@ h3 {
 .toddler-img,
 .class3-4-img {
     border-radius: 2rem;
-    border: 2px solid var(--brightPink);
     box-shadow: 2px 2px 5px var(--phanitasPurple);
 }
 
@@ -320,8 +322,8 @@ h3 {
 }
 
 .phone-number {
-    font-weight: 600;
-    color: var(--brightPink);
+    font-weight: bold;
+    color: var(--phanitasPurple);
 }
 
 
@@ -408,7 +410,7 @@ h3 {
     border-radius: 50%;
     overflow: hidden;
     margin: -90px auto 10px auto;
-    border: 4px solid white;
+    border: 4px solid var(--deepPurple);
     background: white;
 }
 
@@ -443,7 +445,7 @@ h3 {
 .departments {
     display: flex;
     justify-content: center;
-    background-color: var(--lightGreen);
+    background-color: var(--phanitasGreen);
 }
 
 .class-title {
@@ -471,7 +473,7 @@ h3 {
     padding: 0.8rem 1rem;
     background-color: var(--brightPink);
     /* Use a standout color */
-    color: white;
+    color: var(--palegrey);
     font-weight: 700;
     text-decoration: none;
     border-radius: 2rem;
@@ -489,7 +491,7 @@ h3 {
 /* Footer */
 
 .footer {
-    background-color: var(--brightPink);
+    background-color: var(--deepPurple);
     color: var(--palegrey);
     padding: 2rem;
     display: flex;
@@ -540,7 +542,7 @@ h3 {
 
 .icon {
     padding-right: .8rem;
-    color: var(--deepPurple);
+    color: var(--brightGreen);
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -596,7 +598,7 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
-    color: var(--deepPurple);
+    color: var(--brightGreen);
 }
 
 .copy-right {
@@ -857,8 +859,8 @@ input:focus {
 .class-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--brightPink);
-    color: var(--palegrey);
+    background-color: var(--lightGreen);
+    color: var(--deepPurple);
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
@@ -1123,12 +1125,18 @@ ul {
     }
 
     /* Our School */
-    .playground {
+    .playground,
+    .classroom {
         display: flex;
         flex-direction: row;
     }
 
-    .playground>div {
+    .playground {
+        margin-top: 2px;
+    }
+
+    .playground>div,
+    .classroom>div {
         flex: 1 1 50%;
     }
 
@@ -1144,6 +1152,7 @@ ul {
     .classroom-img,
     .playground-img {
         margin: 2rem;
+        padding: 1rem;
         max-width: 500px;
     }
 
