@@ -12,6 +12,16 @@
         rel="stylesheet">
     <!--Styles-->
     <link rel="stylesheet" href="/style.css">
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "fyWDQ84KpsaxH5pMS",
+            });
+        })();
+    </script>
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/8e3a662c3c.js" crossorigin="anonymous"></script>
     <!--Scripts-->
@@ -109,7 +119,7 @@
         <section class="contact-form-section">
             <h2 data-i18n="form_contact_us">Contact Us</h2>
             <div class="form-container">
-                <form class="contact-form">
+                <form class="contact-form" autocomplete="off">
                     <div class="form-group">
                         <label for="name" data-i18n="form_label_name">Name:</label>
                         <input type="text" name="name" id="name" placeholder="Your name"
@@ -134,6 +144,13 @@
                 </form>
             </div>
         </section>
+        <!-- Modal (outside the form) -->
+        <div id="successModal" class="modal hidden" role="dialog" aria-modal="true" tabindex="-1">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <p>Form submitted successfully!</p>
+            </div>
+        </div>
     </main>
 
 
