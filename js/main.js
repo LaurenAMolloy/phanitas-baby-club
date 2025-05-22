@@ -10,12 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setupI18n();
     observer();
     autoDate();
+    emailjs.init("6LfdYEQrAAAAAP1DQu6fk_lky64RGlz6IWlAaV8j");
 
-    const form = document.querySelector(".contact-form");
-    if(form) {
-        form.addEventListener("submit", handleSubmit);
-    }
-    
     //Grab language selectors in Nav
     document.querySelectorAll('[data-lang]').forEach(el => {
         el.addEventListener('click', (e) => {
@@ -24,9 +20,23 @@ document.addEventListener("DOMContentLoaded", () => {
         changeLanguage(lang)
         });
     });
-});  
 
-//const welcome= document.getElementById("welcome");
+    const form = document.querySelector(".contact-form");
+    if(form) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            handleSubmit();
+        });
+    }
+
+}); 
+
+
+
+
+     
+   
+
 
 
 

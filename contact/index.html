@@ -12,20 +12,15 @@
         rel="stylesheet">
     <!--Styles-->
     <link rel="stylesheet" href="/style.css">
-    <!--EmailJS-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "fyWDQ84KpsaxH5pMS",
-            });
-        })();
-    </script>
+    <!--reCAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/8e3a662c3c.js" crossorigin="anonymous"></script>
     <!--Scripts-->
-    <script src="../script.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
+    <!--emailjs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <title>Phanitas Baby Club</title>
 </head>
 
@@ -119,40 +114,45 @@
         <section class="contact-form-section">
             <h2 data-i18n="form_contact_us">Contact Us</h2>
             <div class="form-container">
-                <form class="contact-form" autocomplete="off">
+                <form action="?" method="POST" class="contact-form" id="contact-form" autocomplete="off">
                     <div class="form-group">
-                        <label for="name" data-i18n="form_label_name">Name:</label>
+                        <label for="name" data-i18n="form_label_name" (required)>Name:</label>
                         <input type="text" name="name" id="name" placeholder="Your name"
-                            data-i18n-placeholder="form_placeholder_name" required>
+                            data-i18n-placeholder="form_placeholder_name" pattern="^[A-Za-z\s\-']{3,20}$" minlength="3"
+                            maxlength="20" aria-required="true" required />
                     </div>
                     <div class="form-group">
-                        <label for="email" data-i18n="form_label_email">Email:</label>
+                        <label for="email" data-i18n="form_label_email" (required)>Email:</label>
                         <input type="email" name="email" id="email" placeholder="Your email"
-                            data-i18n-placeholder="form_placeholder_email" required>
+                            data-i18n-placeholder="form_placeholder_email" aria-required="true" required />
                     </div>
                     <div class="form-group">
-                        <label for="subject" data-i18n="form_label_subject">Subject:</label>
+                        <label for="subject" data-i18n="form_label_subject" (required)>Subject:</label>
                         <input type="text" name="subject" id="subject" placeholder="Subject"
-                            data-i18n-placeholder="form_placeholder_subject" required>
+                            data-i18n-placeholder="form_placeholder_subject" pattern="^[A-Za-z\s\-']{3,20}$"
+                            minlength="3" maxlength="20" aria-required="true" required />
                     </div>
                     <div class="form-group">
-                        <label for="message" data-i18n="form_label_message">Message:</label>
+                        <label for="message" data-i18n="form_label_message" (required)>Message:</label>
                         <textarea name="message" id="message" placeholder="Write your message here"
-                            data-i18n-placeholder="form_placeholder_message"></textarea>
+                            data-i18n-placeholder="form_placeholder_message" minlength="10" maxlength="1000"
+                            aria-required="true" required></textarea>
                     </div>
-                    <button class="submitBtn" type="submit" data-i18n="form_send_message">Send your message</button>
+                    <div class="g-recaptcha" data-sitekey="6LfdYEQrAAAAANRwETG286OoHAl_0qTKaR9K76Lh"></div>
+                    <br />
+                    <button class="submitBtn" type="submit" data-i18n="form_send_message">Send
+                        your message</button>
                 </form>
             </div>
         </section>
         <!-- Modal (outside the form) -->
-        <div id="successModal" class="modal hidden" role="dialog" aria-modal="true" tabindex="-1">
+        <div id="successModal" class="modal hidden" role="alert" aria-modal="true" tabindex="-1">
             <div class="modal-content">
                 <span id="closeModal" class="close">&times;</span>
                 <p>Form submitted successfully!</p>
             </div>
         </div>
     </main>
-
 
     <!--Footer-->
     <footer class="footer">

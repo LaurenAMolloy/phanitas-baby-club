@@ -7,6 +7,14 @@ export function sendEmail() {
         message: document.querySelector("#message").value.trim(),
     }
 
+    // const recaptchaResponse = grecaptcha.getResponse();
+    // console.log("reCAPTCHA Token:", recaptchaResponse); // Should not be empty
+
+    // if (!recaptchaResponse) {
+    //     alert("Please complete the reCAPTCHA.");
+    //     return;
+    // }
+
     emailjs.send('service_0uokcom', 'template_5ty8a7l', templateParams).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
@@ -27,6 +35,7 @@ function showModal() {
     const modal = document.getElementById("successModal");
     if (!modal) return;
     modal.classList.remove("hidden");
+    alert("Show Modal");
     modal.focus();
 
     const closeBtn = modal.querySelector("#closeModal");
@@ -45,6 +54,14 @@ function showModal() {
 //Handle Form Submission
 export function handleSubmit(e) {
     e.preventDefault();
-    console.log("submitted");
+    //Grab captcha response
+    const captchaResponse = grecaptcha.getResponse();
+    //Check length of response
+    if(captchaResponse.length === 0) {
+      //Alert and Prevent any more code from running if captcha empty
+      alert("Please complete the CAPTCHA before submitting");
+      return;
+    }
+    console.log("CAPTCHA Passed, submitting form");
     sendEmail();
 }

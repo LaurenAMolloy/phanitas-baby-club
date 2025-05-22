@@ -166,7 +166,6 @@ nav {
 }
 
 .side {
-    /* ensures side nav takes up the full width & height*/
     position: fixed;
     top: 0;
     left: 0;
@@ -179,6 +178,7 @@ nav {
     transform: translate(-100%);
     transition: 1s;
     box-shadow: 1px 5px 5px #666666;
+    z-index: 1000;
 }
 
 .show-sidebar {
@@ -700,10 +700,32 @@ textarea {
 input,
 textarea:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s, outline 0.3s;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     border: 3px solid var(--brightPink);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px dashed var(--brightPink);
+}
+
+
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+    border: none;
+    outline: 2px solid var(--brightGreen);
+    border-radius: 5px;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border: none;
+    outline: 2px solid var(--brightRed);
+    border-radius: 5px;
 }
 
 .submitBtn {
