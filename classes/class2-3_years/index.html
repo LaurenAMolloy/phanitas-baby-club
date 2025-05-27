@@ -37,24 +37,22 @@
                         <i class="fa-solid fa-circle-xmark"></i>
                     </button>
                     <ul class="links">
-                        <li>
+                        <li class="nav-link">
                             <a href="/index.html" data-i18n="home">Home</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/our_school/" data-i18n="school">Our School</a>
                         </li>
-
-                        <li>
+                        <li class="nav-link">
                             <a href="/classes/" data-i18n="teachers-classes">Classes</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/contact/" data-i18n="contact_us">Contact Us</a>
                         </li>
-                        <li><a href="/classes/class2-3_years/index.html" onclick="changeLanguage('en')"
-                                data-i18n="english">English</a></li>
-                        <li><a href="/classes/class2-3_years/index.html" onclick="changeLanguage('gr')"
-                                data-i18n="greek">Greek</a></li>
-                        <li class="phone">
+                        <!-- Original Language Switcher Links -->
+                        <li><a href="#" data-lang="en" data-i18n="english">English</a></li>
+                        <li><a href="#" data-lang="gr" data-i18n="greek">Greek</a></li>
+                        <li class="phone no-style">
                             <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
                         </li>
                     </ul>
@@ -68,6 +66,8 @@
         <section class="two-three_class">
             <div class="content-wrapper">
                 <div class="class2-3-text">
+                    <a href="/classes/index.html" data-i18n="back to class"><i class="fa fa-arrow-left"></i> Back to all
+                        classes</a>
                     <h2>Our 2-3 Year-Old Class: Engaging, Creative, and Fun Learning</h2>
                     <p>In this section, we offer a vibrant and stimulating environment where your child can explore,
                         learn,
@@ -111,10 +111,10 @@
                 <li class="footer-item">
                     <i class="fa-solid fa-location-dot icon"></i>
                     <a href="https://www.google.com/maps?q=11+Aristotelous+Street,+Agios+Sylas+4193,+Ypsonas,+Limassol"
-                        target="_blank">
-                        <address class="footer-address" data-i18n="address">
-                            11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
-                        </address>
+                        target="_blank"></a>
+                    <address class="footer-address" data-i18n="address">
+                        11 Aristotelous Street,Agios Sylas 4193, Ypsonas, Limassol.
+                    </address>
                 </li>
                 <li>
                     <i class="fa-solid fa-envelope icon"></i>
@@ -128,19 +128,20 @@
                     <i class="fa-solid fa-clock icon"></i>
                     <span data-i18n="working_hours">Mon - Fri: 06:45 - 17:00</span>
                 </li>
+                <li> <i class="fa-brands fa-facebook icon"></i>
+                    <a href="https://www.facebook.com/PhanitasBabyClub/"><span data-i18n="follow_us">Follow
+                            Us</span></a>
+                </li>
             </ul>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com/PhanitasBabyClub/" class="fa-brands fa-facebook icon"></a>
-            <p data-i18n="follow_us">Follow Us</p>
         </div>
         <div class="quick-links">
             <h5 data-i18n="quick_links">Quick Links</h5>
             <ul>
-                <li class="footer-quick-links"><a href="/our_school/" data-i18n="quick_school">Our School</a></li>
-                <li class="footer-quick-links"><a href="/classes/" data-i18n="quick_classes">Classes and Teachers</a>
-                </li>
-                <li class="footer-quick-links"><a href="/contact/" data-i18n="quick_contact">Contact
+                <li class="footer-quick-links"><a href="./our_school/index.html" data-i18n="quick_school">Our
+                        School</a></li>
+                <li class="footer-quick-links"><a href="./teachers_classes/index.html" data-i18n="quick_classes">Classes
+                        and Teachers</a></li>
+                <li class="footer-quick-links"><a href="./contact/index.html" data-i18n="quick_contact">Contact
                         Us</a></li>
             </ul>
         </div>

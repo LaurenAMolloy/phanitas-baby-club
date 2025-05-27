@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setupI18n();
     observer();
     autoDate();
-    emailjs.init("6LfdYEQrAAAAAP1DQu6fk_lky64RGlz6IWlAaV8j");
 
     //Grab language selectors in Nav
     document.querySelectorAll('[data-lang]').forEach(el => {
@@ -25,10 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if(form) {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
-            handleSubmit();
+            handleSubmit(e);
         });
     }
-
 }); 
 
 

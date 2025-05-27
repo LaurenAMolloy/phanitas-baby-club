@@ -39,21 +39,22 @@
                         <i class="fa-solid fa-circle-xmark"></i>
                     </button>
                     <ul class="links">
-                        <li>
+                        <li class="nav-link">
                             <a href="/index.html" data-i18n="home">Home</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/our_school/" data-i18n="school">Our School</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/classes/" data-i18n="teachers-classes">Classes</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/contact/" data-i18n="contact_us">Contact Us</a>
                         </li>
+                        <!-- Original Language Switcher Links -->
                         <li><a href="#" data-lang="en" data-i18n="english">English</a></li>
                         <li><a href="#" data-lang="gr" data-i18n="greek">Greek</a></li>
-                        <li class="phone">
+                        <li class="phone no-style">
                             <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
                         </li>
                     </ul>
@@ -96,32 +97,38 @@
         <section class="about-us">
             <div class="content-wrapper">
                 <img class="long-logo" src="./img/long-log.jpg" alt="logo">
-                <div class="about-us-card">
-                    <h2 data-i18n="aboutus_title">About Us</h2>
-                    <h3 data-i18n="aboutus_aim">“Aiming to create complete people with strong personalities.
-                        And above all <span>LOVE, RESPECT, DEDICATION</span> to each child.”</h3>
-                    <p data-i18n="aboutus_blurb1">Welcome to the nursery - childcare center for all-day care, employment
-                        and
-                        study "Phanita's Baby
-                        Club". This is a model preschool and education center, where your child will be properly
-                        educated,
-                        socialized and will be able to gradually integrate into society as a whole more easily.
-                        Phanita's Baby Club daycare center was founded in 2007 with all the specifications required by
-                        today's standards.</p>
-                    <p data-i18n="aboutus_blurb2">We are located in the area of ​​Agios Sylas, Ypsonas and in between in
-                        the
-                        area of ​​the new
-                        Limassol Hospital and Kolossi.
-                        The station's main characteristic is a place of life and education.
-                        A space that is not a station for "parking" the child but on the contrary is a space for
-                        creation
-                        and learning, with a climate of warm human relationships between parents - children - teachers.
-                        A
-                        space of coexistence, collaboration, creation, sharing, love, offering...</p>
-                </div>
-                <div>
-                    <img class="about-us-img fade-in slide-in from-right" src="img/children-scribble.jpg"
-                        alt="children scribbling">
+                <div class="about-us-container">
+                    <div class="about-us-card">
+                        <h2 data-i18n="aboutus_title">About Us</h2>
+                        <h3 data-i18n="aboutus_aim">“Aiming to create complete people with strong personalities.
+                            And above all <span>LOVE, RESPECT, DEDICATION</span> to each child.”</h3>
+                        <p data-i18n="aboutus_blurb1">Welcome to the nursery - childcare center for all-day care,
+                            employment
+                            and
+                            study "Phanita's Baby
+                            Club". This is a model preschool and education center, where your child will be properly
+                            educated,
+                            socialized and will be able to gradually integrate into society as a whole more easily.
+                            Phanita's Baby Club daycare center was founded in 2007 with all the specifications required
+                            by
+                            today's standards.</p>
+                        <p data-i18n="aboutus_blurb2">We are located in the area of ​​Agios Sylas, Ypsonas and in
+                            between in
+                            the
+                            area of ​​the new
+                            Limassol Hospital and Kolossi.
+                            The station's main characteristic is a place of life and education.
+                            A space that is not a station for "parking" the child but on the contrary is a space for
+                            creation
+                            and learning, with a climate of warm human relationships between parents - children -
+                            teachers.
+                            A
+                            space of coexistence, collaboration, creation, sharing, love, offering...</p>
+                    </div>
+                    <div>
+                        <img class="about-us-img fade-in slide-in from-right" src="img/children-scribble.jpg"
+                            alt="children scribbling">
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,11 +144,12 @@
                     <div class="card-text">
                         <h3 data-i18n="principles">Our Basic Principles</h3>
                         <ul>
-                            <li data-i18n="principles_li1">I work in a team</li>
-                            <li data-i18n="principles_li2">Each child has their own uniqueness and individuality.</li>
                             <li data-i18n="principles_li3">The educational program is based on all the interdisciplinary
                                 modules of early childhood
                                 education and care, in accordance with education in Cyprus.</li>
+                            <li data-i18n="principles_li1">I work in a team</li>
+                            <li data-i18n="principles_li2">Each child has their own uniqueness and individuality.</li>
+
                         </ul>
                     </div>
                 </div>
@@ -155,7 +163,6 @@
                         <ul>
                             <li data-i18n="goals_li1">Socialization</li>
                             <li data-i18n="goals_li2">Mutual respect</li>
-                            <li data-i18n="principles_li3">Cooperation</li>
                             <li data-i18n="principles_li4">Self-esteem</li>
                             <li data-i18n="principles_li5">Love for learning and creation</li>
                             <li data-i18n="principles_li6">HAPPY FACES…</li>
@@ -242,11 +249,11 @@
                         <i class="fa-solid fa-clock icon"></i>
                         <span data-i18n="working_hours">Mon - Fri: 06:45 - 17:00</span>
                     </li>
+                    <li> <i class="fa-brands fa-facebook icon"></i>
+                        <a href="https://www.facebook.com/PhanitasBabyClub/"><span data-i18n="follow_us">Follow
+                                Us</span></a>
+                    </li>
                 </ul>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/PhanitasBabyClub/" class="fa-brands fa-facebook icon"></a>
-                <p data-i18n="follow_us">Follow Us</p>
             </div>
             <div class="quick-links">
                 <h5 data-i18n="quick_links">Quick Links</h5>

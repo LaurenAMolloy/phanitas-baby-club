@@ -214,14 +214,63 @@ nav {
     list-style: none;
 }
 
+
 li {
     padding: 1rem 0;
 }
 
-a {
+.nav-link a {
+    position: relative;
+    display: inline-block;
     text-decoration: none;
-    font-weight: 500;
-    color: var(--deepPurple)
+    color: var(--deepPurple);
+    transition: color 0.3s ease;
+}
+
+.nav-link a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--brightPink);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link a:hover {
+    color: var(--brightPink);
+}
+
+.nav-link a:link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--deepPurple);
+    cursor: pointer;
+}
+
+.side a:visited {
+    color: var(--phanitasPurple)
+}
+
+.side a:focus {
+    background-color: var(--palePurple);
+    color: var(--darkPurple);
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+.side a:active {
+    background-color: var(--palePurple);
+    color: var(--deepPurple);
+    outline: none;
 }
 
 .phone {
@@ -232,18 +281,15 @@ a {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--phanitasPurple);
-    /* Use a standout color */
     color: white;
     font-weight: 700;
     text-decoration: none;
     border-radius: 2rem;
     border: none;
-
 }
 
 .phone a:hover {
     background-color: var(--darkPurple);
-    /* Slight hover effect */
 }
 
 /* Hero Styles */
@@ -338,6 +384,16 @@ h3 {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-card,
+.about-us-container>div:last-child {
+    flex: 1 1 100%;
 }
 
 .about-us-card {
@@ -436,16 +492,18 @@ h3 {
 /* Our Classes/Departments */
 .class-card-container {
     gap: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* One column layout */
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
 }
 
 .departments {
     display: flex;
     justify-content: center;
     background-color: var(--phanitasGreen);
+    width: 100%;
 }
 
 .class-title {
@@ -462,6 +520,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.3rem;
+    width: 70%;
+    align-self: center;
 }
 
 .class-card>h3 {
@@ -478,7 +538,7 @@ h3 {
     text-decoration: none;
     border-radius: 2rem;
     border: none;
-    width: 50%;
+    width: 60%;
     margin: 1rem 0;
     margin-top: auto;
 }
@@ -567,6 +627,7 @@ h3 {
     width: 80%;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 1rem;
 }
 
 .footer ul {
@@ -584,7 +645,6 @@ h3 {
 .footer-quick-links a {
     color: white;
     text-decoration: none;
-    /* remove underlines */
     padding: 0.5em;
     position: relative;
     padding-left: 20px;
@@ -638,7 +698,7 @@ h3 {
 .map figure {
     width: 100%;
     height: 0;
-    padding-bottom: 125%;
+    padding-bottom: 50%;
     overflow: hidden;
     position: relative;
 }
@@ -735,7 +795,8 @@ textarea:invalid:not(:placeholder-shown) {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    padding: 1.5rem;
+    padding: 10px 24px;
+    width: 50%;
     border-radius: 1rem;
 }
 
@@ -814,9 +875,15 @@ textarea:invalid:not(:placeholder-shown) {
     padding: 2rem 2rem 0rem 2rem;
 }
 
+.playground-img,
+.classroom-img {
+    width: 70%;
+    padding: 1rem;
+}
+
 .playground-text,
 .class-play-text {
-    padding-bottom: 1rem;
+    padding: 2rem;
     margin-top: .2rem;
 }
 
@@ -882,7 +949,7 @@ textarea:invalid:not(:placeholder-shown) {
 
 .class-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -972,6 +1039,12 @@ ul {
     padding-bottom: 2rem;
 }
 
+.baby-text>h2,
+.class2-3-text>h2,
+.class3-4-text>h2 {
+    padding-top: 1rem;
+}
+
 .baby-text>ul>li,
 .class2-3-text>ul>li,
 .class3-4-text>ul>li {
@@ -983,6 +1056,32 @@ ul {
 @media screen and (min-width: 676px) {
     .side {
         width: 400px
+    }
+
+    .contact-img {
+        width: 70%;
+    }
+
+    /* Footer */
+    .footer-logo {
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-text {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .quick-links,
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 40%;
     }
 
     .meals {
@@ -1012,7 +1111,9 @@ ul {
         flex: 0 0 50%;
     }
 
-
+    .class-grid {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
 }
 
 /* Desktop Styles */
@@ -1041,7 +1142,6 @@ ul {
         gap: 2rem;
         transform: none !important;
         transition: none;
-
     }
 
     .links {
@@ -1074,6 +1174,36 @@ ul {
         flex-basis: 0 0 45%;
     }
 
+    .class-card-container {
+        flex-direction: row;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+
+    .class-card {
+        height: 400px;
+    }
+
+    .class-img {
+        height: 275px;
+    }
+
+    .about-us-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* allows responsiveness */
+        gap: 5%;
+        /* or adjust as needed */
+    }
+
+    .about-us-card,
+    .about-us-container>div:last-child {
+        flex: 1 1 45%;
+    }
+
     /* Why Us */
     .card-container {
         display: grid;
@@ -1086,38 +1216,7 @@ ul {
         width: 100%
     }
 
-    /* Our Classes Hero Page */
-    .class-card-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 2rem;
-        padding: 1rem
-    }
-
-    /* Footer */
-    .footer-logo {
-        align-self: center;
-        margin-bottom: 2rem;
-    }
-
-    .footer-text {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .quick-links,
-    .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 30%;
-    }
-
     /* Contact */
-
     .get-in-touch-intro {
         display: flex;
         flex-direction: row;
@@ -1238,6 +1337,10 @@ ul {
         display: flex;
         flex-direction: row;
         gap: 30px
+    }
+
+    .class-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
 }

@@ -21,6 +21,13 @@
     <!--emailjs-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "fyWDQ84KpsaxH5pMS",
+            });
+        })();
+    </script>
     <title>Phanitas Baby Club</title>
 </head>
 
@@ -31,7 +38,7 @@
         <nav>
             <!--nav header-->
             <div class="nav-header">
-                <img class="logo" src="../img/logo.jpg" alt="logo">
+                <img class="logo" src="/img/logo.jpg" alt="logo">
                 <button type="button" class="toggleBtn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -42,23 +49,22 @@
                         <i class="fa-solid fa-circle-xmark"></i>
                     </button>
                     <ul class="links">
-                        <li>
+                        <li class="nav-link">
                             <a href="/index.html" data-i18n="home">Home</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/our_school/" data-i18n="school">Our School</a>
                         </li>
-                        <li>
+                        <li class="nav-link">
                             <a href="/classes/" data-i18n="teachers-classes">Classes</a>
                         </li>
-                        <li>
-                            <a href="index.html" data-i18n="contact_us">Contact Us</a>
+                        <li class="nav-link">
+                            <a href="/contact/" data-i18n="contact_us">Contact Us</a>
                         </li>
-                        <li><a href="/contact/index.html" onclick="changeLanguage('en')" data-i18n="english">English</a>
-                        </li>
-                        <li><a href="/contact/index.html" onclick="changeLanguage('gr')" data-i18n="greek">Greek</a>
-                        </li>
-                        <li class="phone">
+                        <!-- Original Language Switcher Links -->
+                        <li><a href="#" data-lang="en" data-i18n="english">English</a></li>
+                        <li><a href="#" data-lang="gr" data-i18n="greek">Greek</a></li>
+                        <li class="phone no-style">
                             <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
                         </li>
                     </ul>
@@ -114,7 +120,7 @@
         <section class="contact-form-section">
             <h2 data-i18n="form_contact_us">Contact Us</h2>
             <div class="form-container">
-                <form action="?" method="POST" class="contact-form" id="contact-form" autocomplete="off">
+                <form class="contact-form" id="contact-form" autocomplete="off">
                     <div class="form-group">
                         <label for="name" data-i18n="form_label_name" (required)>Name:</label>
                         <input type="text" name="name" id="name" placeholder="Your name"
@@ -138,7 +144,7 @@
                             data-i18n-placeholder="form_placeholder_message" minlength="10" maxlength="1000"
                             aria-required="true" required></textarea>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LfdYEQrAAAAANRwETG286OoHAl_0qTKaR9K76Lh"></div>
+                    <div class="g-recaptcha" data-sitekey="6Le9SUYrAAAAACULDUHHcKriztTZiACj_leqXbFv"></div>
                     <br />
                     <button class="submitBtn" type="submit" data-i18n="form_send_message">Send
                         your message</button>
@@ -155,8 +161,9 @@
     </main>
 
     <!--Footer-->
+    <!--Footer-->
     <footer class="footer">
-        <img class="footer-logo" src="../img/logo.jpg" alt="logo">
+        <img class="footer-logo" src="/img/logo.jpg" alt="logo">
         <div class="footer-text">
             <div class="contact">
                 <h4 data-i18n="get_in_touch">Get in Touch</h4>
@@ -182,19 +189,20 @@
                         <i class="fa-solid fa-clock icon"></i>
                         <span data-i18n="working_hours">Mon - Fri: 06:45 - 17:00</span>
                     </li>
+                    <li> <i class="fa-brands fa-facebook icon"></i>
+                        <a href="https://www.facebook.com/PhanitasBabyClub/"><span data-i18n="follow_us">Follow
+                                Us</span></a>
+                    </li>
                 </ul>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/PhanitasBabyClub/" class="fa-brands fa-facebook icon"></a>
-                <p data-i18n="follow_us">Follow Us</p>
             </div>
             <div class="quick-links">
                 <h5 data-i18n="quick_links">Quick Links</h5>
                 <ul>
-                    <li class="footer-quick-links"><a href="/our_school/" data-i18n="quick_school">Our
+                    <li class="footer-quick-links"><a href="./our_school/index.html" data-i18n="quick_school">Our
                             School</a></li>
-                    <li class="footer-quick-links"><a href="/classes/" data-i18n="quick_classes">Classes</a></li>
-                    <li class="footer-quick-links"><a href="/contact/" data-i18n="quick_contact">Contact
+                    <li class="footer-quick-links"><a href="./teachers_classes/index.html"
+                            data-i18n="quick_classes">Classes and Teachers</a></li>
+                    <li class="footer-quick-links"><a href="./contact/index.html" data-i18n="quick_contact">Contact
                             Us</a></li>
                 </ul>
             </div>
@@ -203,7 +211,6 @@
             <div>Copyright © <span id="spanYear"></span> Phanita's Baby Club. All rights reserved.</div>
         </div>
     </footer>
-    <!--Footer ends here-->
 </body>
 
 </html>
