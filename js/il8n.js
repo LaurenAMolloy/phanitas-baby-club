@@ -16,7 +16,7 @@ function setLanguagePreference(lang) {
 }
 
 function updateContent(langData) {
-    console.log("langData",langData)
+    //console.log("langData",langData)
     //grab all elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(element => {
         //retrieve the data attribute
@@ -36,7 +36,7 @@ function updatePlaceholders(langData) {
 }
 
 export async function changeLanguage(lang) {
-    console.log(lang)
+    //console.log(lang)
     //Set lang to local storage
     //Lang persists even after they leave the website
     setLanguagePreference(lang);

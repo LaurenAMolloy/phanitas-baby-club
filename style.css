@@ -219,7 +219,7 @@ li {
     padding: 1rem 0;
 }
 
-.nav-link a {
+a.nav-link {
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -227,7 +227,7 @@ li {
     transition: color 0.3s ease;
 }
 
-.nav-link a::after {
+a.nav-link::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -235,42 +235,59 @@ li {
     height: 2px;
     bottom: -3px;
     left: 0;
-    background-color: var(--brightPink);
+    background-color: var(--deepPurple);
     transform-origin: right;
     transition: transform 0.3s ease-out;
 }
 
-.nav-link a:hover::after {
+a.nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-.nav-link a:hover {
+a.nav-link:hover {
     color: var(--brightPink);
 }
 
-.nav-link a:link {
+
+a.nav-link:link {
     text-decoration: none;
     font-weight: 600;
     color: var(--deepPurple);
     cursor: pointer;
 }
 
-.side a:visited {
+a.nav-link:visited {
     color: var(--phanitasPurple)
 }
 
-.side a:focus {
+a.nav-link:focus {
     background-color: var(--palePurple);
     color: var(--darkPurple);
     outline-offset: 2px;
     text-decoration: none;
 }
 
-.side a:active {
+a.nav-link:active {
     background-color: var(--palePurple);
     color: var(--deepPurple);
     outline: none;
+}
+
+a.nav-link[aria-current="page"] {
+    text-decoration: underline wavy var(--brightPink) 0.15rem;
+    text-underline-offset: 0.5rem;
+}
+
+.langBtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--brightPink);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: none;
 }
 
 .phone {
