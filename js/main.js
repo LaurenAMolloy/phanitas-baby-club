@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     observer();
     autoDate();
     activeLinks();
-
-
     // //Grab language selectors in Nav
     // document.querySelectorAll('[data-lang]').forEach(el => {
     //     el.addEventListener('click', (e) => {

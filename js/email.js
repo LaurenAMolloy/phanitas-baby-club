@@ -29,7 +29,6 @@ function showModal() {
     const modal = document.getElementById("successModal");
     if (!modal) return;
     modal.classList.remove("hidden");
-    alert("Show Modal");
     modal.focus();
 
     const closeBtn = modal.querySelector("#closeModal");

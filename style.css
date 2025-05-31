@@ -12,6 +12,11 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+
 body {
     /* 4. Add accessible line-height */
     line-height: 1.5;
@@ -96,6 +101,11 @@ img {
     --paleGreen: #d9f0c1;
     /* gentle, minty green */
     --palePink: #f9d6e5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--deepPurple);
 }
 
 /* Global Styles */
@@ -385,13 +395,15 @@ h3 {
 }
 
 .email {
-    color: var(--deepPurple);
-    font-weight: 400;
+    color: var(--phanitasPurple);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .phone-number {
     font-weight: bold;
     color: var(--phanitasPurple);
+    text-decoration: none;
 }
 
 
@@ -552,6 +564,9 @@ h3 {
 }
 
 .classBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.8rem 1rem;
     background-color: var(--brightPink);
     /* Use a standout color */
@@ -858,6 +873,13 @@ textarea:invalid:not(:placeholder-shown) {
     font-size: 1.5rem;
 }
 
+.g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: 0 0;
+    width: 100% !important;
+    overflow: hidden;
+}
+
 
 /* Our School */
 
@@ -900,7 +922,8 @@ textarea:invalid:not(:placeholder-shown) {
 .playground-img,
 .classroom-img {
     width: 70%;
-    padding: 1rem;
+
+    border-radius: 1rem;
 }
 
 .playground-text,
@@ -954,6 +977,18 @@ textarea:invalid:not(:placeholder-shown) {
 
 .meals-text {
     padding: 2rem;
+}
+
+.meal-img-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.meals-img {
+    width: 70%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Our Classes Page */
