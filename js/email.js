@@ -48,6 +48,13 @@ function showModal() {
 export function handleSubmit(e) {
     e.preventDefault();
     console.log(e);
+
+    // Check if grecaptcha is available
+    if (typeof grecaptcha === "undefined") {
+     alert("CAPTCHA failed to load. Please refresh and try again.");
+     return;
+  }
+
     //Grab captcha response
     const captchaResponse = grecaptcha.getResponse();
     //Check if response

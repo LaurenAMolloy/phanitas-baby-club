@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const langBtn = document.querySelector(".langBtn");
     
     //Toggle language
+if(langBtn) {
     langBtn.addEventListener("click", () => {
         //use a ternary to toggle and current value of language
         const currentLang = langBtn.getAttribute("data-lang");
@@ -31,14 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
         langBtn.setAttribute("data-lang", newLang);
         changeLanguage(newLang);
     });
+}
 
-    const form = document.querySelector(".contact-form");
-    if(form) {
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            handleSubmit(e);
-        });
-    }
+    // const form = document.querySelector(".contact-form");
+    // const submitBtn = form?.querySelector('button[type="submit"]');
+    // if (submitBtn) submitBtn.disabled = true;
+    // if(form) {
+    //     form.addEventListener("submit", (e) => {
+    //         e.preventDefault();
+    //         handleSubmit(e);
+    //     });
+    // }
 }); 
 
 

@@ -245,7 +245,7 @@ a.nav-link::after {
     height: 2px;
     bottom: -3px;
     left: 0;
-    background-color: var(--deepPurple);
+    background-color: var(--brightPink);
     transform-origin: right;
     transition: transform 0.3s ease-out;
 }
@@ -702,6 +702,28 @@ h3 {
 
 .copy-right {
     padding: 2rem 0;
+}
+
+.social {
+    padding: 1rem;
+    width: 100%;
+}
+
+.social>h4 {
+    padding-top: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.hr {
+    border-top: 1px solid var(--brightGreen);
 }
 
 /* Contact Styles */
