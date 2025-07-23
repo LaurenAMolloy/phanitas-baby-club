@@ -42,12 +42,12 @@ Users should be able to:
 
 ### Skills
 
-I utilised skills using JSON data and data attributes. I successfully implemented the language toggle feature by storing each langauge text in a JSON file and creating a function that looks up the specific key for each HTML attribute. The site is fully responsive acheived by using a combination of CSS flexbox and grid.
+I utilised skills using JSON data and data attributes. I successfully implemented the language toggle feature by storing each language text in a JSON file and creating a function that looks up the specific key for each HTML attribute. The site is fully responsive acheived by using a combination of CSS flexbox and grid.
 
 ### Continued development
 
 I look forward to creating more dynamic applications and exploring how I can implement various API's into my projects.
 
 ### Useful resources
-- [Multilingual Site Article](https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505) - This helped me to implement the langauge toggle.
+- [Multilingual Site Article](https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505) - This helped me to implement the language toggle.
 
