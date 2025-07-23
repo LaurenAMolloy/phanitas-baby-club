@@ -28,15 +28,16 @@
         <nav>
             <!--nav header-->
             <div class="nav-header">
-                <img class="logo" src="./img/logo.jpg" alt="logo">
+                <img class="logo" src="./img/logo.jpg" alt="phanita's baby club logo">
                 <button type="button" class="toggleBtn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
                 <!--nav links sidenav-->
                 <aside class="side">
-                    <button class="close-btn">
-                        <i class="fa-solid fa-circle-xmark"></i>
+                    <button class="close-btn" aria-label="close button">
+                        <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
+                        <span class="visually-hidden">Close menu</span>
                     </button>
                     <ul class="links">
                         <li>
@@ -52,7 +53,9 @@
                             <a class="nav-link" href="/contact/" data-i18n="contact_us">Contact Us</a>
                         </li>
                         <li>
-                            <button class="langBtn" data-lang="en" data-i18n="language">English</button>
+                            <button class="langBtn" data-lang="en" data-i18n="language" aria-label="Switch to English"
+                                aria-pressed="false">
+                                English</button>
                         </li>
                         <li class="phone no-style">
                             <a href="tel:+35799578375" data-i18n="call_us">CALL US</a>
